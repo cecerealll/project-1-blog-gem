@@ -1,0 +1,365 @@
+/* difficulties i had
+- the percentage calculation for headers for some reason */
+
+/* HOMEPAGE */
+/* HOME header */
+* {
+    /* border: 1px solid red; */
+}
+html {
+    font-size: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+   font-size: 1.3rem;
+   font-family: 'Dosis', serif;
+   text-transform: capitalize;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+      font-size: 1.3rem;
+      font-family: 'Dosis', serif;
+      text-transform: capitalize;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+      font-size: 1.3rem;
+      font-family: 'Dosis', serif;
+      text-transform: capitalize;
+}
+
+:-ms-input-placeholder {
+      font-size: 1.3rem;
+      font-family: 'Dosis', serif;
+      text-transform: capitalize;
+}
+
+
+.domine {
+    font-family: 'Domine', serif;
+}
+
+.dosis {
+    font-family: 'Dosis', sans-serif;
+}
+
+.rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+    width: 60%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+body {
+    background: lightblue;
+}
+
+header {
+    text-align: center;
+    line-height: 1.5;
+    background: lightgrey;
+    padding: 10px 0;
+}
+
+.main-header h2 {
+    width: calc(26% - 40px);
+    float: left;
+    /* margin: 0 80px 0 0; */
+    text-transform: capitalize;
+    font-size: 3.4rem;
+}
+
+.main-header nav {
+    width: calc(44%);
+    float: left;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin: 0 40px 0 20px;
+    /* text-align: center; */
+    /* margin: 10px; */
+}
+
+.main-header ul li {
+    float: left;
+    /* margin: 0 8px; */
+    text-align: center;
+    width: calc((100% / 6) - 2px);
+    margin: 15px 1px 0 1px;
+    /* margin-top: 15px; */
+}
+
+.main-header ul li:hover {
+    color: #ff4658;
+}
+
+.search {
+    width: calc(30% - 20px);
+    float: right;
+    margin-top: 5px;
+    /* object-fit: cover; */
+    /* clear: both; */
+    /* padding: 0; */
+    /* margin: 0 0 0 80px; */
+}
+
+.search input {
+    float: left;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    width: 80%;
+    /* margin: 0; */
+}
+
+.search::-moz-placeholder,
+.search::-webkit-input-placeholder {
+    font-family: 'Dosis', sans-serif;
+}
+
+.search button {
+    float: left;
+    width: 20%;
+    min-height: 39px;
+    background: #ff4658;
+    /* padding: 5px; */
+    /* object-fit: cover; */
+}
+
+.fa-search {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* MAIN START */
+main {
+    visibility: hidden;
+}
+ /* HOME HERO*/
+ .hero {
+     visibility: visible;
+     background: url(assets/home-hero.jpg) top no-repeat;
+     background-size: cover;
+     width: 100%; 
+     height: 450px;
+     margin-bottom: 80px;;
+     /* overflow: hidden; */
+
+ }
+
+ .hero h3 {
+    font-size: 1.3rem;
+    color: #f7e41e;
+    text-transform: uppercase;
+    float: left;
+    margin: 8px 30px 20px 0;
+ }
+ 
+ .hero h1 {
+    font-size: 2.7rem;
+    width: 60%;
+    color: white;
+    clear:both
+     /* text-transform: capitalize; */
+ }
+
+ .hero-txt {
+     position: relative;
+     top: 45%;
+ }
+
+ .fa-angle-left,
+ .fa-angle-right {
+     display: block;
+     float: left;
+     font-size: 2.7rem;
+     color: white;
+     margin-right: 5px;
+ }
+
+ .fa-angle-left:hover,
+ .fa-angle-right:hover {
+     color: grey;
+ }
+ .hero-feedback {
+     position: relative;
+     top: 52%;
+ }
+
+ .like,
+ .comment {
+     float: left;
+     margin-right: 30px;
+     font-size: 1.3rem;
+     color: white;
+ }
+
+ .fa-heart-o,
+ .fa-commenting-o {
+     margin-right: 5px;
+     color: #ff4658;
+     font-size: 1.4rem;
+ }
+
+ .fa-heart-o:hover,
+ .fa-commenting-o:hover {
+     color: white;
+ }
+ /* HERO FINISHES */
+
+.recent {
+    visibility: visible;
+    width: 27%;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    /* margin-bottom: 50px; */
+    margin: 50px auto;
+}
+
+.recent p a {
+    float: left;
+}
+
+.recent a:hover {
+    color: #b0b0b0;
+}
+/* .recent p:first-child {
+    text-decoration: wavy;
+} */
+.recent .squiggle {
+    position: absolute;
+    left: 16%;
+    bottom: -20px;
+}
+
+.squiggle {
+    width: 43px;
+}
+.recent p:last-child {
+    float: right;
+}
+
+/* .recent p:first-child {
+    margin-right: 10px;
+} */
+ 
+ /* MAIN BLOG */
+ /* TRAVEL */
+ /* .blog {
+     visibility: visible;
+     width: 74%;
+     float: left;
+ }
+
+ .blog-travel img {
+    width: 100%;
+ } */
+
+ 
+
+ /* .blog img {
+     width: 100%;
+ } */
+
+ img {
+     width: 100%;
+ } 
+ 
+ .blog {
+     visibility: visible;
+     width: 74%;
+     float: left;
+ }
+
+ .blog-travel {
+     background: white;
+     margin-bottom: 30px;
+ }
+
+ .blog-travel-txt {
+     padding: 30px 40px;
+ }
+
+
+
+ .tag {
+     font-size: 1.4rem;
+     background: #e5f9d8;
+     color: #68a442;
+     display: inline-block;
+     padding: 5px 10px;
+     text-transform: capitalize;
+     font-weight: bold;
+     margin-bottom: 25px;
+ }
+
+ .squiggle {
+     margin-bottom: 10px;
+ }
+
+ .blog-info {
+     position: relative;
+     margin-bottom: 15px;
+ }
+
+ .blog-title {
+     font-size: 2.1rem;
+     margin-bottom: 10px;
+ }
+
+ .blog-txt {
+     font-size: 1.2rem;
+     color: #576466;
+     line-height: 1.6;
+     margin-bottom: 30px;
+ }
+
+.date {
+    font-size: 1.35rem;
+    color: #586466;
+    text-transform: capitalize;
+    float: left;
+    /* margin-bottom: 80px; */
+}
+
+.feedback {
+    /* float: right; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    /* margin-bottom: 80px; */
+    /* position: relative; */
+    /* bottom: 0; */
+}
+
+.feedback p {
+    color: black;
+    /* float: right; */
+}
+
+.feedback .comment {
+    margin-right: 0;
+}
+
+/* MODEL START */
+.blog-model {
+    background: url(assets/home-vacation.jpg) center;
+    width: 50%;
+    height: 572px;
+    background-size: cover;
+}

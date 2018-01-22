@@ -1,0 +1,4 @@
+Heading Font: Domine (Google Fonts)
+Secondary Heading Font: Dosis (Google Fonts)
+Body Font: Rubik (Google Fonts)
+
