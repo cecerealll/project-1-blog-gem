@@ -1,5 +1,23 @@
 /* difficulties i had
 - the percentage calculation for headers for some reason */
+/* presentation idea
+
+blog model and quote section
+    - didnt set as background image because the image i extracted should just be the exact size so i didnt want to alter it wiht background position
+
+    - blockquote section- wanted to set height the same as the model section without using a pixel value because i noticed that the value changes as i play aroud with the margin size
+    
+    - soulutio nwas to wrap the 2 sections in a container
+    - set container to pos rel and quote section to pos ab and strech to fill 100% height with its posiitoning
+
+The general idea is that an element with position: absolute;
+will position against the nearest parent element that has position: relative;
+. You then stretch a column to fill 100% height by assigning both a top: 0px;
+and bottom: 0px;
+(or whatever pixels/percentages you actually need.) Here's an example:
+
+
+somethign else i learned is to not thikn too hard bbout class names until needed - spent unnecessary amt of time thiking up class nnames */
 
 /* HOMEPAGE */
 /* HOME header */
@@ -43,7 +61,6 @@ a:visited {
       font-family: 'Dosis', serif;
       text-transform: capitalize;
 }
-
 
 .domine {
     font-family: 'Domine', serif;
@@ -297,7 +314,7 @@ main {
 
 
  .tag {
-     font-size: 1.4rem;
+     font-size: 1.1rem;
      background: #e5f9d8;
      color: #68a442;
      display: inline-block;
@@ -364,11 +381,15 @@ main {
 /* .overlay {
     background: 
 } */
+
+.blog-container {
+    position: relative;
+}
 .blog-model {
     /* background: url(assets/home-vacation.jpg) center; */
-    width: calc(50% - 10px);
+    width: calc(50% - 15px);
     position: relative;
-    margin-right: 10px;
+    margin-right: 15px;
     float: left;
     /* padding: 10px; */
     /* height: auto; */
@@ -386,7 +407,7 @@ main {
 .blog-model-txt,
 .blog-model-info {
     position: absolute;
-    top: 46%;
+    top: 40%;
     padding: 25px 30px;
     color: white;
     /* margin-top: 68%; */
@@ -412,11 +433,60 @@ main {
 }
 
 /* QUOTE START */
+
 .blog-quote {
-    float: right;
+    /* float: right; */
     width: 50%;
     background: #68a442;
-    height: 388px;
-    position: relative; 
+    /* height: 388px; */
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 25px;
     /* position: relative; */
 }
+
+.blog-quote-txt .tag{
+    width: 39%;
+    margin: 50px auto 10px auto;
+    display: block;
+    text-align: center;
+}
+
+.blog-quote-txt .blog-title {
+    position: relative;
+    color: white;
+    padding: 20px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+blockquote h2:before,
+blockquote h2::after {
+    content: "“";
+    display: block;
+    position: absolute;
+    font-size: 4rem;
+    top: 10%;
+    left: 0;
+    color: white;
+    text-align: center;
+    /* left: -39px; */
+}
+
+blockquote h2::after {
+    content: "”";
+    position: absolute;
+    top: 70%;
+    right: -90%;
+}
+
+.blog-quote-date,
+.blog-quote-feedback p,
+.blog-quote-feedback i {
+    color: white;
+    /* position: relative; */
+    /* top: 6%; */
+}
+
