@@ -514,6 +514,7 @@ iframe {
     background: white;
     float: left;
     margin-right: 15px;
+    min-height: 500px;
 }
 
 
@@ -521,15 +522,20 @@ iframe {
 
 .blog-container2 {
     position: absolute; 
+    /* background: red; */
     top: 0;
     bottom: 0;
     right: 0;
+    /* left: 0; */
     width: calc(50% - 7.5px);
+    min-height: 500px;
+    overflow: hidden;
     /* float: right; */
 }
 .blog-link {
     width: 100%;
     background : #369bf5;
+    min-height: 240px;
     /* float: right; */
     /* position: absolute; */
     /* top: 0;
@@ -540,6 +546,7 @@ iframe {
 
 .blog-music {
     width: 100%;
+    min-height: 260px;
     /* position: absolute; */
     background: orange;
     /* height: 50%; */
