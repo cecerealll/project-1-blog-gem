@@ -17,7 +17,11 @@ and bottom: 0px;
 (or whatever pixels/percentages you actually need.) Here's an example:
 
 
-somethign else i learned is to not thikn too hard bbout class names until needed - spent unnecessary amt of time thiking up class nnames */
+somethign else i learned is to not thikn too hard bbout class names until needed - spent unnecessary amt of time thiking up class nnames 
+
+timing was a big of a crunch - but it defiintely trained my working under pressure skill*/
+
+
 
 /* HOMEPAGE */
 /* HOME header */
@@ -31,6 +35,11 @@ html {
 a {
     display: block;
     text-decoration: none;
+}
+
+aside {
+    visibility: hidden;
+    width: 23%;
 }
 
 a:visited {
@@ -161,9 +170,9 @@ header {
 
 
 /* MAIN START */
-main {
+/* main {
     visibility: hidden;
-}
+} */
  /* HOME HERO*/
  .hero {
      visibility: visible;
@@ -297,7 +306,7 @@ main {
  } 
  
  .blog {
-     visibility: visible;
+     /* visibility: visible; */
      width: 74%;
      float: left;
  }
@@ -551,3 +560,153 @@ iframe {
     background: orange;
     /* height: 50%; */
 }
+
+/* FOOTER START */
+/* .newsletter {
+    position: relative;
+} */
+
+footer {
+    position: relative;
+}
+.subscribe {
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    padding: 50px 60px;
+}
+
+.subscribe h2 {
+    font-size: 2rem;
+}
+
+.subscribe p {
+    font-size: 1.3rem;
+}
+.subscribe-icon {
+    float: left;
+}
+
+.subscribe-icon {
+    color: red;
+    font-size: 3rem;
+
+}
+.subscribe-txt {
+    float: left;
+}
+
+.subscribe-input {
+    float: right;
+}
+
+
+/* MAIN FOOTER */
+.footer-title {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.main-footer {
+    background: #0b132d;
+    color: white;
+    padding: 80px 0;
+}
+
+.footer-column {
+    float: left;
+    /* width: 33%; */
+}
+
+.footer-bloggem {
+    width: calc(60% - 100px);
+    margin-right: 100px;
+}
+
+.footer-categories {
+    width: 40%;
+    text-transform: capitalize;
+}
+
+.footer-categories ul {
+    width: 50%;
+    float: left;
+}
+
+.footer-categories a:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.footer-followus {
+    float: left;
+    width: 26%;
+    /* text-align: left; */
+}
+
+.social {
+    /* display: inline-block; */
+    /* width: 33.33%; */
+    text-align: center;
+    float: left;
+    /* margin-right: 10px; */
+    width: calc(33.33% - 3%);
+    /* min-width:  */
+    /* height: 100%; */
+    /* float: left; */
+    /* min-height: 100%; */
+    /* height: auto; */
+}
+
+.icon {
+    /* float: left; */
+    background: #121b37;
+    padding: 30% 0px;
+    font-size: 2rem;
+    color: red;
+    width: 100%;
+    /* width: calc(33.33% - ((10px * 2) / 3)); */
+}
+
+.icon:hover {
+    background: white;
+}
+
+.icon-top {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.icon-top div:not(.rss),
+.icon-bottom div:not(.linkedin) {
+    margin-right: 4%;
+}
+.footer-txt {
+    font-size: 1.2rem;
+    color: #a0a3ad;
+    line-height: 2;
+}
+
+.copyright {
+    margin-top: 80px;
+    color: #a0a3ad;
+    font-size: 1.2rem;
+}
+
+.copyright p {
+    /* color: #a0a3ad; */
+}
+/* .twitter-icon {
+    display: inline-block;
+}
+.twitter {
+    background: white;
+    padding: 9px;
+    font-size: 3rem;
+    color: red;
+} */
+
+/* .post {
+    display: flex;
+} */
