@@ -16,6 +16,9 @@ will position against the nearest parent element that has position: relative;
 and bottom: 0px;
 (or whatever pixels/percentages you actually need.) Here's an example:
 
+went with max wrapper width of 1170
+hero image was 1970
+
 
 somethign else i learned is to not thikn too hard bbout class names until needed - spent unnecessary amt of time thiking up class nnames 
 
@@ -339,6 +342,11 @@ header {
      margin-bottom: 25px;
  }
 
+ .tag:hover {
+     background: #68a442;
+     color: white;
+ }
+
  .squiggle {
      margin-bottom: 10px;
  }
@@ -419,8 +427,7 @@ header {
     /* z-index: 9999; */
 }
 
-.blog-model-txt,
-.blog-model-info {
+.blog-model-txt {
     position: absolute;
     top: 35%;
     padding: 25px 30px;
@@ -428,6 +435,10 @@ header {
     line-height: 1.6;
     /* margin-top: 68%; */
     /* margin-top: 45%; */
+}
+
+.blog-model-txt .blog-title {
+    margin-bottom: 40px;
 }
 
 .blog-model-date p {
@@ -464,25 +475,36 @@ header {
     /* position: relative; */
 }
 
+.blog-quote-txt {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px 25px;
+    top: 12%;
+}
+
 .blog-quote-txt .tag{
     width: 40%;
-    margin: 50px auto 10px auto;
+    margin: 0 auto 30px auto;
     display: block;
     text-align: center;
 }
 
 .blog-quote-txt .blog-title {
-    position: relative;
-    color: white;
-    padding: 20px;
-    line-height: 1.6;
-    margin-bottom: 23rpx;
+    line-height: 1.7;
     text-align: center;
+    color: white;
+    margin: 40px 0 70px 0;
 }
 
-.blog-quote .blog-info {
-    bottom: -10%;
-}
+/* .blog-quote-txt .blog-title {
+    color: white;
+    padding: 25px 20px;
+    line-height: 1.5;
+    text-align: center;
+} */
+
+
 
 blockquote h2:before,
 blockquote h2::after {
@@ -500,7 +522,7 @@ blockquote h2::after {
 blockquote h2::after {
     content: "”";
     position: absolute;
-    top: 70%;
+    top: 60%;
     right: -90%;
 }
 
@@ -554,11 +576,11 @@ blockquote h2::after {
     position: absolute; 
     /* background: red; */
     top: 0;
-    /* bottom: 0; */
+    bottom: 0;
     right: 0;
     /* left: 0; */
     width: calc(50% - 7.5px);
-    min-height: 100%;
+    /* min-height: 100%; */
     overflow: hidden;
     color: white;
     /* height: 100%; */
@@ -596,7 +618,7 @@ blockquote h2::after {
 .blog-music {
     width: 100%;
     /* min-height: auto; */
-    height: 100%;
+    /* height: 100%; */
     /* position: absolute; */
     background: white;
     padding: 20px 25px;
@@ -613,6 +635,7 @@ blockquote h2::after {
     /* width: auto; */
     margin: 50px auto;
     width: 14%;
+    /* clear: both; */
 }
 
 .load-more button {
@@ -631,8 +654,115 @@ aside {
     float: right; */
 }
 
-/*  */
+.secondary {
+    width: 24%;
+    float: right;
+}
 
+.secondary-manesh {
+    margin-bottom: 20px;
+}
+
+.secondary-manesh-txt {
+    background: white;
+    padding: 25px 20px;
+}
+.secondary-title {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    /* text-align: center; */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.secondary-txt {
+    line-height: 1.6 ;
+    margin-bottom: 20px;
+}
+
+.border {
+    border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.secondary-social li {
+    float: left;
+    width: 20%;
+
+    font-size: 2rem;
+    color: #767f80;
+    text-align: center;
+    /* padding-bottom: 20px; */
+    /* margin-bottom: 20px; */
+    /* height: 100%; */
+}
+
+.secondary-social li:hover {
+    color: #ff4658;
+}
+
+.secondary-social {
+    padding-bottom: 20px;
+}
+
+/* popular posts */
+
+.secondary-popular {
+    background: white;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+}
+
+.popular-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.secondary-container {
+    position: relative;
+    /* margin-top: 10px 0; */
+}
+
+.secondary .blog-info {
+    margin-bottom: 0;
+}
+
+.secondary-container .tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.secondary-title {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.secondary .date, 
+.secondary .comment,
+.secondary .like {
+    font-size: 1rem;
+} 
+/* FIRST AD*/
+
+.secondary-ad {
+    margin-bottom: 20px;
+}
+
+/* POPTAG */
+
+.poptag {
+    background: white;
+    padding: 25px 20px;
+    /* width: 100%; */
+}
+
+.poptag h3 {
+    margin: 0 5px 5px 0;
+    padding: 5px;
+    /* margin-bottom: 0; */
+}
 
 
 /* FOOTER START */
@@ -669,7 +799,7 @@ footer {
 }
 
 .subscribe-icon {
-    color: red;
+    color: #ff4658;
     font-size: 3rem;
 
 }
@@ -767,7 +897,7 @@ footer {
     background: #121b37;
     padding: 30% 0px;
     font-size: 2rem;
-    color: red;
+    color: #ff4658;
     width: 100%;
     /* width: calc(33.33% - ((10px * 2) / 3)); */
 }
@@ -797,9 +927,8 @@ footer {
     font-size: 1.2rem;
 }
 
-.copyright p {
     /* color: #a0a3ad; */
-}
+
 /* .twitter-icon {
     display: inline-block;
 }
