@@ -164,6 +164,7 @@ header {
     width: 20%;
     min-height: 39px;
     background: #ff4658;
+    cursor: pointer;
     /* padding: 5px; */
     /* object-fit: cover; */
 }
@@ -635,6 +636,7 @@ blockquote h2::after {
     /* width: auto; */
     margin: 50px auto;
     width: 14%;
+    /* cursor: pointer; */
     /* clear: both; */
 }
 
@@ -645,6 +647,7 @@ blockquote h2::after {
     font-size: 1.4rem;
     /* text-transform: capitalize; */
     padding: 10px 15px;
+    cursor: pointer;
 }
 
 /* ASIDE START */
@@ -665,7 +668,7 @@ aside {
 
 .secondary-manesh-txt {
     background: white;
-    padding: 25px 20px;
+    padding: 30px 25px;
 }
 .secondary-title {
     text-transform: capitalize;
@@ -710,7 +713,7 @@ aside {
 
 .secondary-popular {
     background: white;
-    padding: 25px 20px;
+    padding: 30px 25px;
     margin-bottom: 20px;
 }
 
@@ -754,15 +757,45 @@ aside {
 
 .poptag {
     background: white;
-    padding: 25px 20px;
+    padding: 30px 25px;
+    margin-bottom: 20px;
+    /* margin: 0 auto; */
+    /* position: relative; */
     /* width: 100%; */
 }
 
+/* .tag-container h3:nth-child(2) {
+    float: right;
+} */
+
+.tag-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
 .poptag h3 {
-    margin: 0 5px 5px 0;
-    padding: 5px;
+    margin: 0 8px 8px 0;
+    padding: 7px 13px;
+    /* padding: 5px; */
+    text-align: center;
+    font-size: 1.3rem;
+    /* letter-spacing: 1px; */
     /* margin-bottom: 0; */
 }
+
+  /* AD SECTION2 */
+
+  .ad {
+      width: calc(50% - 5px);
+      float: left;
+      margin: 0 10px 10px 0;
+  }
+
+  .ad2,
+  .ad4 {
+      margin-right: 0;
+  }
 
 
 /* FOOTER START */
@@ -772,6 +805,7 @@ aside {
 
 footer {
     position: relative;
+    margin-top: 140px;
 }
 .subscribe {
     width: 100%;
@@ -832,6 +866,7 @@ footer {
     color: white;
     position: absolute;
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 
