@@ -30,9 +30,6 @@ added pixel value max width as well as a percentage value width*/
 
 /* HOMEPAGE */
 /* HOME header */
-* {
-    /* border: 1px solid red; */
-}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     .subscribe {
@@ -319,6 +316,7 @@ header {
 
  img {
      width: 100%;
+     display: block;
  } 
  
  .blog {
@@ -1110,3 +1108,131 @@ form .submit {
     border: none;
 }
 
+/* ABOUT PAGE */
+
+.about {
+    background: white;
+}
+
+.about-txt {
+    padding: 45px;
+}
+
+.about-img  {
+    margin-bottom: 80px;
+}
+
+.about h1, 
+.author h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.about p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #576466;
+}
+
+.about .squiggle {
+    margin-bottom: 40px;
+}
+
+.p-left {
+    float: left;
+    width: 48%;
+    /* margin-top: 40px; */
+}
+
+.p-right {
+    float: right;
+    width: 48%;
+    /* margin-bottom: 30px; */
+}
+
+.about-social {
+    margin-top: 30px;
+}
+
+.about-social li {
+    float: left;
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.about-social .fa-facebook-square,
+.author-social .fa-facebook-square {
+    color: #4c70ba;
+}
+
+.about-social .fa-twitter-square,
+.author-social .fa-twitter-square {
+    color: #26bdff
+}
+
+.about-social .fa-google-plus-square {
+    color: #e13e46;
+}
+
+.about-social .fa-linkedin-square,
+.author-social .fa-linkedin-square {
+    color: #0089d2;
+}
+
+.author h1 {
+    text-align: center;
+}
+
+.author .squiggle {
+    margin: 0 auto 40px auto;
+
+}
+
+.author-container {
+    width: calc(33.33% - 20px);
+    float: left;
+    /* margin-right: 30px; */
+}
+
+.author-marg {
+    margin: auto 30px;
+}
+
+.author-list div:nth-child(3n) {
+    margin-right: 0;
+}
+
+.author-txt {
+    background: white;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+.author-social {
+    width: 45%;
+    margin: 0 auto;
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* width: 100%;
+    margin: 0 auto; */
+}
+
+.author-social li {
+    float: left; 
+    margin-right: 10px;
+    margin-top: 23px;
+    /* width: auto;  */
+}
+
+.author-social li.linkedin {
+    margin-right: 0;
+}
+
+
+.top {
+    margin-bottom: 30px;
+}
