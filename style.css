@@ -19,7 +19,9 @@ and bottom: 0px;
 
 somethign else i learned is to not thikn too hard bbout class names until needed - spent unnecessary amt of time thiking up class nnames 
 
-timing was a big of a crunch - but it defiintely trained my working under pressure skill*/
+timing was a big of a crunch - but it defiintely trained my working under pressure skill
+
+added pixel value max width as well as a percentage value width*/
 
 
 
@@ -420,9 +422,10 @@ header {
 .blog-model-txt,
 .blog-model-info {
     position: absolute;
-    top: 40%;
+    top: 35%;
     padding: 25px 30px;
     color: white;
+    line-height: 1.6;
     /* margin-top: 68%; */
     /* margin-top: 45%; */
 }
@@ -432,7 +435,7 @@ header {
 }
 
 .blog-model-info {
-    top: 75%;
+    top: 73%;
     width: 100%;
 }
 
@@ -457,6 +460,7 @@ header {
     right: 0;
     bottom: 0;
     padding: 20px 25px;
+    /* margin-top: 10px; */
     /* position: relative; */
 }
 
@@ -471,8 +475,13 @@ header {
     position: relative;
     color: white;
     padding: 20px;
-    line-height: 1.3;
+    line-height: 1.6;
     margin-bottom: 23rpx;
+    text-align: center;
+}
+
+.blog-quote .blog-info {
+    bottom: -10%;
 }
 
 blockquote h2:before,
@@ -510,12 +519,20 @@ blockquote h2::after {
 .blog-clash {
     margin-top: 30px;
     padding-bottom: 30px;
+    /* position: relative; */
 }
 
-iframe {
-    width: 100%;
+.blog-clash-img {
+    position: relative;
 }
 
+.play-button {
+    width: 9%;
+    top: 45%;
+    left: 45%;
+    position: absolute;
+
+}
 /* NATURE START */
 
 .blog-nature {
@@ -523,7 +540,11 @@ iframe {
     background: white;
     float: left;
     margin-right: 15px;
-    min-height: 500px;
+    /* min-height: 500px; */
+}
+
+.blog-nature-txt {
+    padding: 20px 25px;
 }
 
 
@@ -533,18 +554,24 @@ iframe {
     position: absolute; 
     /* background: red; */
     top: 0;
-    bottom: 0;
+    /* bottom: 0; */
     right: 0;
     /* left: 0; */
     width: calc(50% - 7.5px);
-    min-height: 500px;
+    min-height: 100%;
     overflow: hidden;
+    color: white;
+    /* height: 100%; */
     /* float: right; */
 }
 .blog-link {
     width: 100%;
+    /* height: 100%; */
     background : #369bf5;
-    min-height: 240px;
+    min-height: 225px;
+    margin-bottom: 15px;
+    padding: 35px 25px 15px 25px;
+    /* height: 100%; */
     /* float: right; */
     /* position: absolute; */
     /* top: 0;
@@ -553,13 +580,60 @@ iframe {
     /* bottom: 0; */
 }
 
+.blog-link .blog-title {
+    margin-bottom: 30px;
+
+}
+
+.blog-link .date,
+.blog-link .like p,
+.blog-link .comment p,
+.blog-link .like i,
+.blog-link .comment i {
+    color: white;
+}
+
 .blog-music {
     width: 100%;
-    min-height: 260px;
+    /* min-height: auto; */
+    height: 100%;
     /* position: absolute; */
-    background: orange;
+    background: white;
+    padding: 20px 25px;
+    color: black;
     /* height: 50%; */
 }
+
+.blog-music .blog-info {
+    margin-top: 12px;
+}
+
+.load-more {
+    /* clear: both; */
+    /* width: auto; */
+    margin: 50px auto;
+    width: 14%;
+}
+
+.load-more button {
+    width: 100%;
+    background : #68a442;
+    color: white;
+    font-size: 1.4rem;
+    /* text-transform: capitalize; */
+    padding: 10px 15px;
+}
+
+/* ASIDE START */
+aside {
+    visibility: visible;
+    /* width: 23%;
+    float: right; */
+}
+
+/*  */
+
+
 
 /* FOOTER START */
 /* .newsletter {
@@ -573,19 +647,25 @@ footer {
     width: 100%;
     background: white;
     position: absolute;
-    bottom: 0;
+    bottom: -50px;
     padding: 50px 60px;
 }
 
 .subscribe h2 {
     font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .subscribe p {
     font-size: 1.3rem;
+    color: #576466;
+    /* margin-bottom: 30px */
 }
 .subscribe-icon {
     float: left;
+    margin-right: 15px;
 }
 
 .subscribe-icon {
@@ -599,6 +679,29 @@ footer {
 
 .subscribe-input {
     float: right;
+    width: 44%;
+    position: relative; 
+}
+
+.subscribe input {
+    width: 80%;
+    background: #f1f1f1;
+    border: none;
+    height: 50px;
+    padding: 25px 35px;
+    font-size: 1.5rem;
+    /* position: relative; */
+}
+
+.subscribe button {
+    min-height: 100%;
+    width: 30%;
+    right: 0;
+    background: #ff4658;
+    text-transform: capitalize;
+    color: white;
+    position: absolute;
+    font-size: 1.5rem;
 }
 
 
